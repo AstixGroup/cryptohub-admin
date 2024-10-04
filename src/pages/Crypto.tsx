@@ -14,7 +14,7 @@ import {numberSpacer} from "@/lib/utils.tsx";
 
 const Crypto = () => {
     const [page, setPage] = useState<number>(1);
-    const [limit, setLimit] = useState<number>(10);
+    const [limit, setLimit] = useState<number>(20);
     const [keyword, setKeyword] = useState<string>("");
 
     const getCryptosQuery = useGetCryptos(page, limit, keyword)
@@ -63,6 +63,7 @@ const Crypto = () => {
                                 <Pagination
                                     showSizeChanger
                                     defaultCurrent={page}
+                                    defaultPageSize={limit}
                                     total={cryptosData?.meta?.totalCryptos}
                                     onChange={(page, pageSize) => {
                                         setPage(page);

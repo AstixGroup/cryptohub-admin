@@ -29,7 +29,7 @@ const UsersTable = ({data}: ClinicTableProps) => {
                         data?.map(user => (
                             <TableRow key={user.id}>
                                 <TableCell>{user.id}</TableCell>
-                                <TableCell>{`${user.name || ""} ${user.surname || ""}`}</TableCell>
+                                <TableCell>{`${user.name.slice(0, 200) || ""} ${user.surname || ""}`}</TableCell>
                                 <TableCell>{user.username || "--"}</TableCell>
                                 <TableCell>{numberSpacer(user.balance || 0)}</TableCell>
                                 <TableCell>{user._count?.referrals || 0}</TableCell>

@@ -14,7 +14,7 @@ import {numberSpacer} from "@/lib/utils.tsx";
 
 const Games = () => {
     const [page, setPage] = useState<number>(1);
-    const [limit, setLimit] = useState<number>(10);
+    const [limit, setLimit] = useState<number>(20);
     const [keyword, setKeyword] = useState<string>("");
 
     const getGamesQuery = useGetGames(page, limit, keyword)
@@ -63,6 +63,7 @@ const Games = () => {
                                 <Pagination
                                     showSizeChanger
                                     defaultCurrent={page}
+                                    defaultPageSize={limit}
                                     total={gamesData?.meta?.totalGames}
                                     onChange={(page, pageSize) => {
                                         setPage(page);

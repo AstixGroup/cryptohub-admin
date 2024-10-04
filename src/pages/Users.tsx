@@ -10,7 +10,7 @@ import {numberSpacer} from "@/lib/utils.tsx";
 
 const Users = () => {
     const [page, setPage] = useState<number>(1);
-    const [limit, setLimit] = useState<number>(10);
+    const [limit, setLimit] = useState<number>(20);
     const [keyword, setKeyword] = useState<string>("");
 
     const getUsersQuery = useGetUsers(page, limit, keyword)
@@ -45,6 +45,7 @@ const Users = () => {
                                 <Pagination
                                     showSizeChanger
                                     defaultCurrent={page}
+                                    defaultPageSize={limit}
                                     total={usersData?.meta?.totalUsers}
                                     onChange={(page, pageSize) => {
                                         setPage(page);

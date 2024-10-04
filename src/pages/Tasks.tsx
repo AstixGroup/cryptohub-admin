@@ -15,7 +15,7 @@ import {numberSpacer} from "@/lib/utils.tsx";
 
 const Tasks = () => {
     const [page, setPage] = useState<number>(1);
-    const [limit, setLimit] = useState<number>(10);
+    const [limit, setLimit] = useState<number>(20);
     const [keyword, setKeyword] = useState<string>("");
     const [type, setType] = useState<string>();
 
@@ -72,6 +72,7 @@ const Tasks = () => {
                                 <Pagination
                                     showSizeChanger
                                     defaultCurrent={page}
+                                    defaultPageSize={limit}
                                     total={tasksData?.meta?.totalTasks}
                                     onChange={(page, pageSize) => {
                                         setPage(page);
