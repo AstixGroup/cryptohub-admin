@@ -1,0 +1,27 @@
+export enum queryKeys {
+    // admin
+    LOGIN = "LOGIN",
+    GET_DASHBOARD = "GET_DASHBOARD",
+    GET_ADMIN_INFO = "GET_ADMIN_INFO",
+
+    // users
+    GET_USERS = "GET_USERS",
+
+    // tasks
+    GET_TASKS = "GET_TASKS",
+    CREATE_TASK = "CREATE_TASK",
+    UPDATE_TASK = "UPDATE_TASK",
+    DELETE_TASK = "DELETE_TASK",
+
+    //games
+    GET_GAMES = "GET_GAMES",
+    CREATE_GAME = "CREATE_GAME",
+    UPDATE_GAME = "UPDATE_GAME",
+    DELETE_GAME = "DELETE_GAME",
+
+    // crypto
+    GET_CRYPTOS = "GET_CRYPTOS",
+    CREATE_CRYPTO = "CREATE_CRYPTO",
+    UPDATE_CRYPTO = "UPDATE_CRYPTO",
+    DELETE_CRYPTO = "DELETE_CRYPTO",
+}
