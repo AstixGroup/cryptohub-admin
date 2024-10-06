@@ -1,6 +1,8 @@
 import {FiUsers} from "react-icons/fi";
 import {MdAddTask, MdCurrencyExchange} from "react-icons/md";
 import {SlGameController} from "react-icons/sl";
+import {RiMovie2Line} from "react-icons/ri";
+
 
 export const sidebarItems = [
     // {
@@ -32,6 +34,12 @@ export const sidebarItems = [
         label: "Crypto",
         href: "/crypto",
         icon: <MdCurrencyExchange/>,
+    },
+    {
+        id: 6,
+        label: "Movies",
+        href: "/movies",
+        icon: <RiMovie2Line/>,
     },
 ];
 

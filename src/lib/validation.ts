@@ -55,3 +55,13 @@ export const CryptoSchema = z.object({
     }).min(1, "Required"),
     card_name: z.string({required_error: "Required!",}).min(1, "Required"),
 });
+
+
+export const MovieSchema = z.object({
+    name: z.string({required_error: "Required!"}).min(1, "Required"),
+    image: z.string({required_error: "Required!"}).min(1, "Required"),
+    video_360: z.coerce.number().optional(),
+    video_480: z.coerce.number().optional(),
+    video_720: z.coerce.number().optional(),
+    video_1080: z.coerce.number().optional()
+});

@@ -6,3 +6,4 @@ export {default as Crypto} from "./Crypto";
 export {default as Games} from "./Games";
 export {default as Tasks} from "./Tasks";
 export {default as Users} from "./Users";
+export {default as Movies} from "./Movies";

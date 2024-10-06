@@ -36,3 +36,15 @@ export const useUpdateCryptoModal = create<ModalProps>((set) => ({
     onOpen: () => set({isOpen: true}),
     onClose: () => set({isOpen: false}),
 }));
+
+export const useCreateMovieModal = create<ModalProps>((set) => ({
+    isOpen: false,
+    onOpen: () => set({isOpen: true}),
+    onClose: () => set({isOpen: false}),
+}));
+
+export const useUpdateMovieModal = create<ModalProps>((set) => ({
+    isOpen: false,
+    onOpen: () => set({isOpen: true}),
+    onClose: () => set({isOpen: false}),
+}));

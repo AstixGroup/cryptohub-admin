@@ -2,7 +2,7 @@ import {Route, Routes} from "react-router-dom";
 import {AuthLayout, RootLayout} from "./layouts";
 import {NotFound} from "./pages";
 import {AuthChecker} from "./middlewares";
-import {Crypto, Games, Tasks, Users} from "@/pages";
+import {Crypto, Games, Movies, Tasks, Users} from "@/pages";
 
 function App() {
     return (
@@ -19,6 +19,7 @@ function App() {
                 <Route path="tasks" element={<Tasks/>}/>
                 <Route path="games" element={<Games/>}/>
                 <Route path="crypto" element={<Crypto/>}/>
+                <Route path="movies" element={<Movies/>}/>
 
                 <Route path="*" element={<NotFound/>}/>
             </Route>
